@@ -1,0 +1,16 @@
+.header {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: #2b3ca0;
+}
+
+.header .cor {
+    color: white;
+    cursor: pointer;
+}

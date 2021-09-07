@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-lg-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Visualizar produto
+            </div>
+            <div class="card-body">
+
+                <div class="col-md-12">
+                    <label>Nome </label>: {{ this.produto?.nome }}
+                </div>
+                <div class="col-md-12">
+                    <label>Preço </label>: {{ this.produto?.preco }}
+                </div>
+                <div class="col-md-12">
+                    <label>Quantidade </label>: {{ this.produto?.qtd }}
+                </div>
+                <div class="col-md-12">
+                    <label>Data Registada </label>: {{ this.produto?.created_at }}
+                </div>
+                <div class="col-md-12">
+                    <label>Ultima actualização </label>: {{ this.produto?.updated_at }}
+                </div>
+            </div>
+            <div class="card-footer text-right">
+                <a [routerLink]="[ '/produtos/edit/', this.getId() ]" class="btn btn-sm btn-info mr-2">Actualizar</a>
+                <button class="btn btn-sm btn-danger mr-2" (click)="eliminar()">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
